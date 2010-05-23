@@ -6,13 +6,11 @@ package com.neuronumerous.defcon.lies;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.google.inject.Inject;
+import com.google.inject.assistedinject.Assisted;
 
 public class PolyDataSource implements Source<PolyData> {
 
@@ -21,23 +19,19 @@ public class PolyDataSource implements Source<PolyData> {
   private final BufferedReader reader;
   private final Logger logger;
   
-  @Deprecated
-  public PolyDataSource() {
-    this(null);
-  }
-  
   public PolyDataSource(BufferedReader reader) {
-    this(reader,LoggerFactory.getLogger(PolyDataSource.class));
+    this(reader,Logger.getLogger(PolyDataSource.class.getName()));
   }
   
-  public PolyDataSource(BufferedReader reader, Logger logger) {
+  @Inject
+  public PolyDataSource(@Assisted BufferedReader reader, Logger logger) {
     this.logger = logger;
     this.reader = reader;
   }
   
   @Override public PolyData next() {
     String line = nextNonEmptyLine(reader);
-    while (line != null && !line.startsWith("Timestamp")) {
+    while (line != null && !line.startsWith(STARTING_FIELD)) {
       line = nextNonEmptyLine(reader);
     }
     // catch null fall-through
@@ -80,7 +74,7 @@ public class PolyDataSource implements Source<PolyData> {
       getIntOrNull(breathField),
       getIntOrNull(blushField));  
     } catch (NumberFormatException e) {
-      logger.info("Error parsing numbers for data.",e);
+      logger.log(Level.INFO, "Error parsing numbers for data.", e);
       return null;
     }
   }
@@ -92,7 +86,7 @@ public class PolyDataSource implements Source<PolyData> {
          :                               Integer.valueOf(field.data.trim());
   }
 
-  public DataField getDataFieldFromLine(String line) {
+  public static DataField getDataFieldFromLine(String line) {
     String[] pair = line.trim().split("[:]\\s\\s*");
     if (pair.length == 2) {
       return new DataField(pair[0], pair[1]);

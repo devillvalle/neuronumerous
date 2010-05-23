@@ -21,20 +21,29 @@
   		<groupId>junit</groupId>
   		<artifactId>junit</artifactId>
   		<version>4.8.1</version>
+  		<scope>test</scope>
   	</dependency>
   	<dependency>
   		<groupId>com.google.guava</groupId>
   		<artifactId>guava-io</artifactId>
   		<version>r03</version>
-  		<type>jar</type>
-  		<scope>compile</scope>
   	</dependency>
   	<dependency>
-  		<groupId>org.slf4j</groupId>
-  		<artifactId>slf4j-api</artifactId>
-  		<version>1.6.0</version>
-  		<type>jar</type>
-  		<scope>compile</scope>
+  		<groupId>com.google.inject</groupId>
+  		<artifactId>guice</artifactId>
+  		<version>2.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.google.inject.extensions</groupId>
+  		<artifactId>guice-assisted-inject</artifactId>
+  		<version>2.0</version>
   	</dependency>
   </dependencies>
+  <repositories>
+    <repository>
+        <id>sli4j-repository</id>
+        <name>sli4j Repository for Maven</name>
+        <url>http://sli4j.googlecode.com/svn/repo</url>
+    </repository>
+</repositories>
 </project>

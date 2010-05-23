@@ -2,7 +2,6 @@ package com.neuronumerous.defcon.lies;
 
 import java.io.BufferedReader;
 import java.io.StringReader;
-import java.util.List;
 
 import junit.framework.Assert;
 
@@ -25,7 +24,7 @@ public class PolygraphDataSourceTest {
   @Test
   public void testGetDataFieldFromLine() {
     String fieldData = "Timestamp:     0:5:4";
-    DataField result = new PolyDataSource().getDataFieldFromLine(fieldData);
+    DataField result = PolyDataSource.getDataFieldFromLine(fieldData);
     Assert.assertEquals("Timestamp", result.name);
     Assert.assertEquals("0:5:4", result.data);
   }
