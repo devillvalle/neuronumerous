@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
-import com.neuronumerous.defcon.lies.DataField;
 import com.neuronumerous.defcon.lies.util.Source;
 
 public class PolyDataSource implements Source<PolyData> {

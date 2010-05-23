@@ -7,7 +7,6 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.neuronumerous.defcon.lies.DataField;
 import com.neuronumerous.defcon.lies.data.PolyData;
 import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.util.Source;
