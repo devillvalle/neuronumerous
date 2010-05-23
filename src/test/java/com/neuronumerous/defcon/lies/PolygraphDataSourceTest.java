@@ -7,6 +7,8 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import com.neuronumerous.defcon.lies.util.Source;
+
 public class PolygraphDataSourceTest {
 
   private final String timestamp1 = "Timestamp:  0:4:59\n\n" 
