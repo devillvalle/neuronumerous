@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2010 Neuronumerous Collective 
+ * Copyright (c) 2010 Christian Edward Gruber
+ */
 package com.neuronumerous.defcon.lies;
 
 public class DataField {

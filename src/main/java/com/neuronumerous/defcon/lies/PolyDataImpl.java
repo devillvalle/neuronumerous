@@ -1,43 +1,80 @@
+/*
+ * Copyright (c) 2010 Neuronumerous Collective 
+ * Copyright (c) 2010 Christian Edward Gruber
+ */
 package com.neuronumerous.defcon.lies;
 
 public class PolyDataImpl implements PolyData {
 
-  /* package */int blush;
-  /* package */int breath;
-  /* package */int GSR;
-  /* package */int pleth;
-  /* package */int timestamp;
+  private Integer blush;
+  private Integer breath;
+  private Integer gsr;
+  private Integer pleth;
+  private Integer timestamp;
+  
+  public PolyDataImpl(
+      Integer timestamp, 
+      Integer gsr, 
+      Integer pleth, 
+      Integer breath, 
+      Integer blush) {
+    
+    this.timestamp = timestamp;
+    this.gsr = gsr;
+    this.pleth = pleth;
+    this.breath = breath;
+    this.blush = blush;
+  }
 
   @Override
-  public int getBlush() {
+  public Integer getBlush() {
     return blush;
   }
 
   @Override
-  public int getBreath() {
+  public Integer getBreath() {
     return breath;
   }
 
   @Override
-  public int getGSR() {
-    return GSR;
+  public Integer getGsr() {
+    return gsr;
   }
 
   @Override
-  public int getPleth() {
+  public Integer getPleth() {
     return pleth;
   }
 
   @Override
-  public int getTimestamp() {
+  public Integer getTimestamp() {
     return timestamp;
   }
 
+  /**
+   * Parses the HH:MM:SS timestamp into raw seconds.
+   * 
+   * @return timestamp in seconds
+   */
+  public static Integer parseTimestamp(String timestampString) {
+    String[] parts = timestampString.split("[:]");
+    for (int i = 0; i < parts.length; i++) {
+      if (parts[i] == null || parts[i].isEmpty()) {
+        parts[i] = "0";
+      }
+    }
+    int timestamp = 0;
+    timestamp += Integer.valueOf(parts[0]) * 60 * 60;
+    timestamp += Integer.valueOf(parts[1]) * 60;
+    timestamp += Integer.valueOf(parts[2]);
+    return timestamp;
+  }
+  
   @Override
   public String toString() {
     return getClass().getSimpleName() + "[" 
         + "timestamp=" + timestamp + ","
-        + "GSR=" + GSR + ","
+        + "gsr=" + gsr + ","
         + "breath=" + breath + ","
         + "pleth=" + pleth + ","
         + "blush=" + blush + ","

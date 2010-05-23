@@ -1,18 +1,19 @@
+/*
+ * Copyright (c) 2010 Neuronumerous Collective 
+ * Copyright (c) 2010 Christian Edward Gruber
+ */
 package com.neuronumerous.defcon.lies;
 
 public interface PolyData {
 
-  int getTimestamp();
+  Integer getTimestamp();
 
-  int getGSR();
+  Integer getGsr();
 
-  int getPleth();
+  Integer getPleth();
 
-  int getBreath();
+  Integer getBreath();
 
-  int getBlush();
+  Integer getBlush();
 
-  public static enum PolyDataFields {
-    Timestamp, GSR, pleth, breath, blush;
-  }
 }
