@@ -73,11 +73,11 @@ public class PolyDataImpl implements PolyData {
   @Override
   public String toString() {
     return getClass().getSimpleName() + "[" 
-        + "timestamp=" + timestamp + ","
-        + "gsr=" + gsr + ","
-        + "breath=" + breath + ","
-        + "pleth=" + pleth + ","
-        + "blush=" + blush + ","
+        + "timestamp=" + timestamp + ", "
+        + "gsr=" + gsr + ", "
+        + "breath=" + breath + ", "
+        + "pleth=" + pleth + ", "
+        + "blush=" + blush
         + "]";
   }
 }
