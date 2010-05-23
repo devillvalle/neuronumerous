@@ -36,8 +36,8 @@ public class Main {
   public void runFromReader(BufferedReader reader) throws InterruptedException {
     Source<PolyData> source = new PolyDataSource(reader, logger);
     PolyData pd = source.next();
-    Ticker t = new Ticker();
-		while (pd != null && t.block(1,TimeUnit.SECONDS)) {
+    Ticker ticker = new Ticker();
+		while (pd != null) {
 		  // Aggregate
       PolyData currentPd = pd;
 		  List<PolyData> pds = new ArrayList<PolyData>();
@@ -48,6 +48,7 @@ public class Main {
 		  pd = aggregatePolyDatas(pd.getTimestamp(), pds);
 		  System.out.println(pd);
 		  pd = currentPd;
+		  ticker.block(1, TimeUnit.SECONDS);
 		}
 	}
 
