@@ -8,10 +8,12 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.neuronumerous.defcon.lies.util.Ticker;
 
 public class Main {
   
@@ -25,16 +27,17 @@ public class Main {
   /**
    * Main event loop.
    */
-  public void run() {
+  public void run() throws InterruptedException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     //BufferedReader reader = Files.newReader(aFile, Charsets.US_ASCII);
     runFromReader(reader);
   }
 
-  public void runFromReader(BufferedReader reader) {
+  public void runFromReader(BufferedReader reader) throws InterruptedException {
     Source<PolyData> source = new PolyDataSource(reader, logger);
     PolyData pd = source.next();
-		while (pd != null) {
+    Ticker t = new Ticker();
+		while (pd != null && t.block(1,TimeUnit.SECONDS)) {
 		  // Aggregate
       PolyData currentPd = pd;
 		  List<PolyData> pds = new ArrayList<PolyData>();
@@ -68,7 +71,7 @@ public class Main {
   /**
    * Main entry point
    */
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     APP_INJECTOR = Guice.createInjector(new MainModule());
     Main app = new Main(Logger.getLogger(Main.class.getName()));
     Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
