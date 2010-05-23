@@ -16,16 +16,19 @@ import com.google.inject.Injector;
 import com.neuronumerous.defcon.lies.data.PolyData;
 import com.neuronumerous.defcon.lies.data.PolyDataImpl;
 import com.neuronumerous.defcon.lies.data.PolyDataSource;
+import com.neuronumerous.defcon.lies.data.PolyDataUtil;
 import com.neuronumerous.defcon.lies.util.Source;
 import com.neuronumerous.defcon.lies.util.Ticker;
 
 public class Main {
   
-  private Logger logger;
   public static Injector APP_INJECTOR;
+  private final Logger logger;
+  private final PolyDataUtil polyDataUtil;  
   
-  public Main(Logger logger) {
+  public Main(Logger logger, PolyDataUtil polyDataUtil) {
     this.logger = logger;
+    this.polyDataUtil = polyDataUtil;
   }
   
   /**
@@ -49,36 +52,21 @@ public class Main {
 		    pds.add(currentPd);
 		    currentPd = source.next();
 		  }
-		  pd = aggregatePolyDatas(pd.getTimestamp(), pds);
+		  pd = polyDataUtil.aggregatePolyDatas(pd.getTimestamp(), pds);
 		  System.out.println(pd);
 		  pd = currentPd;
 		  ticker.block(1, TimeUnit.SECONDS);
 		}
 	}
 
-  public PolyData aggregatePolyDatas(int timestamp, List<PolyData> elements) {
-    if (elements.size() <= 0) return new PolyDataImpl(timestamp,null,null,null,null);
-    long gsr = 0, breath = 0, pleth = 0, blush = 0; 
-    for (PolyData data : elements) {
-      gsr+=data.getGsr();
-      breath+=data.getBreath();
-      pleth+=data.getPleth();
-      blush+=data.getBlush();    
-    }
-    return new PolyDataImpl(
-        timestamp, 
-        (int)(gsr/elements.size()), 
-        (int)(pleth/elements.size()), 
-        (int)(breath/elements.size()), 
-        (int)(blush/elements.size()));
-  }
+
 
   /**
    * Main entry point
    */
   public static void main(String[] args) throws InterruptedException {
     APP_INJECTOR = Guice.createInjector(new MainModule());
-    Main app = new Main(Logger.getLogger(Main.class.getName()));
+    Main app = APP_INJECTOR.getInstance(Main.class);
     Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
       @Override public void run() {
         System.out.println("Shutdown detected - exiting.");
