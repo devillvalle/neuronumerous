@@ -1,8 +1,10 @@
-package com.neuronumerous.defcon.lies;
+package com.neuronumerous.defcon.lies.data;
 
 import junit.framework.Assert;
 
 import org.junit.Test;
+
+import com.neuronumerous.defcon.lies.data.PolyDataImpl;
 
 
 public class PolyDataImplTest {

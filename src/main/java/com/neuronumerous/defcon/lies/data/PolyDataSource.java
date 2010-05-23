@@ -2,7 +2,7 @@
  * Copyright (c) 2010 Neuronumerous Collective 
  * Copyright (c) 2010 Christian Edward Gruber
  */
-package com.neuronumerous.defcon.lies;
+package com.neuronumerous.defcon.lies.data;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
+import com.neuronumerous.defcon.lies.DataField;
 import com.neuronumerous.defcon.lies.util.Source;
 
 public class PolyDataSource implements Source<PolyData> {

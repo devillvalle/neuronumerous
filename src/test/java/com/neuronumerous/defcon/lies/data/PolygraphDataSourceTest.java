@@ -1,4 +1,4 @@
-package com.neuronumerous.defcon.lies;
+package com.neuronumerous.defcon.lies.data;
 
 import java.io.BufferedReader;
 import java.io.StringReader;
@@ -7,6 +7,9 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import com.neuronumerous.defcon.lies.DataField;
+import com.neuronumerous.defcon.lies.data.PolyData;
+import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.util.Source;
 
 public class PolygraphDataSourceTest {

@@ -13,6 +13,9 @@ import java.util.logging.Logger;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.neuronumerous.defcon.lies.data.PolyData;
+import com.neuronumerous.defcon.lies.data.PolyDataImpl;
+import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.util.Source;
 import com.neuronumerous.defcon.lies.util.Ticker;
 
