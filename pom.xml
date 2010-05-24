@@ -38,12 +38,46 @@
   		<artifactId>guice-assisted-inject</artifactId>
   		<version>2.0</version>
   	</dependency>
+  	<dependency>
+  		<groupId>commons-jelly</groupId>
+  		<artifactId>commons-jelly-tags-swing</artifactId>
+  		<version>1.0</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency>
+		<dependency> 
+			<groupId>org.javabuilders</groupId> 
+			<artifactId>javabuilder-swing</artifactId> 
+			<version>1.0-dev-20100520</version> 
+		</dependency> 
+		<dependency> 
+			<groupId>org.javabuilders</groupId> 
+			<artifactId>javabuilder-swing-glazedlists</artifactId> 
+			<version>1.0-dev-20100520</version> 
+		</dependency> 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>1.6.0</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
   </dependencies>
   <repositories>
     <repository>
-        <id>sli4j-repository</id>
-        <name>sli4j Repository for Maven</name>
-        <url>http://sli4j.googlecode.com/svn/repo</url>
+      <id>sli4j-repository</id>
+      <url>http://sli4j.googlecode.com/svn/repo</url>
     </repository>
+		<repository> 
+			<id>javabuilders</id> 
+			<url>http://code.google.com/p/javabuilders/source/browse/repo</url> 
+		</repository> 
 </repositories>
 </project>
