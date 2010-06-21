@@ -25,6 +25,7 @@ public class PolyGraph extends JPanel {
 
   private final GraphicsPlotCanvas manager;
   private final Canvas delegate;
+  public DisplayConfig display = new DisplayConfig();
   
   private int window = 1;
   
@@ -92,10 +93,14 @@ public class PolyGraph extends JPanel {
         blushCurve.addElement(new DataPoint(ordinal, 0));
       }
     }
-    plot.addElement(plethCurve);
-    plot.addElement(breathCurve);
-    plot.addElement(gsrCurve);
-    plot.addElement(blushCurve);
+    if (display.isPleth())
+      plot.addElement(plethCurve);
+    if (display.isBreath())
+      plot.addElement(breathCurve);
+    if (display.isGsr())
+      plot.addElement(gsrCurve);
+    if (display.isBlush())
+      plot.addElement(blushCurve);
     manager.connect(plot);
   }
 
@@ -105,5 +110,36 @@ public class PolyGraph extends JPanel {
     delegate.setSize(width, height);
   }
 
-  
+  public static class DisplayConfig {
+    private boolean gsr = true;
+    private boolean breath = true;
+    private boolean pleth = true;
+    private boolean blush = true;
+
+    public boolean isGsr() {
+      return gsr;
+    }
+    public void setGsr(boolean gsr) {
+      this.gsr = gsr;
+    }
+    public boolean isBreath() {
+      return breath;
+    }
+    public void setBreath(boolean breath) {
+      this.breath = breath;
+    }
+    public boolean isPleth() {
+      return pleth;
+    }
+    public void setPleth(boolean pleth) {
+      this.pleth = pleth;
+    }
+    public boolean isBlush() {
+      return blush;
+    }
+    public void setBlush(boolean blush) {
+      this.blush = blush;
+    }
+    
+  }
 }

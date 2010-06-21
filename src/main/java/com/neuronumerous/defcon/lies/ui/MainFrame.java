@@ -26,6 +26,7 @@ import com.neuronumerous.defcon.lies.data.PolyDataImpl;
 import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.data.PolyGraphModel;
 import com.neuronumerous.defcon.lies.util.Source;
+import com.sun.xml.internal.txw2.Document;
 
 @SuppressWarnings("unused")
 public class MainFrame extends JFrame {
@@ -210,8 +211,7 @@ public class MainFrame extends JFrame {
     try {
       JTextField timelabel = (JTextField)result.get("time");
       this.timestamp = ""+pd.getTimestamp();
-      //timelabel.setText(""+pd.getTimestamp());
-      //timelabel.setd
+      timelabel.setText(""+pd.getTimestamp());
     } catch (Throwable t) {
       logger.log(Level.WARNING, "Error setting timestamp.", t);
     }
@@ -228,4 +228,6 @@ public class MainFrame extends JFrame {
     return result;
   }
 
+
+  
 }
