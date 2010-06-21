@@ -16,7 +16,7 @@ import jcckit.util.PropertiesBasedConfigData;
  */
 public class ConfigUtil {
   
-  public static int DATA_POINTS = 120;
+  public static int DATA_POINTS = 200;
 
   public static ConfigParameters getConfigParameters() {
     Properties properties = new Properties();
@@ -43,7 +43,7 @@ public class ConfigUtil {
     //properties.setProperty("plot/coordinateSystem/yAxis/axisLength", "1.0");
     properties.setProperty("plot/coordinateSystem/yAxis/ticLabelAttributes/", "defaultTicLabelAttributes/");
     properties.setProperty("plot/coordinateSystem/yAxis/maximum", "280");
-    properties.setProperty("plot/coordinateSystem/yAxis/minimum", "20");
+    properties.setProperty("plot/coordinateSystem/yAxis/minimum", "-5");
     properties.setProperty("plot/coordinateSystem/yAxis/axisLabelPosition", "-0.15 0");
     properties.setProperty("plot/curveFactory/definitions", "def null");
     properties.setProperty("plot/curveFactory/def/symbolFactory/className", "jcckit.plot.SquareSymbolFactory");

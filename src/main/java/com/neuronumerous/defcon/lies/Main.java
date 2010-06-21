@@ -11,7 +11,6 @@ import org.javabuilders.BuildResult;
 import org.javabuilders.BuilderConfig;
 import org.javabuilders.swing.SwingJavaBuilder;
 
-import com.google.inject.Injector;
 import com.neuronumerous.defcon.lies.data.PolyDataImpl;
 import com.neuronumerous.defcon.lies.data.PolyGraphModel;
 import com.neuronumerous.defcon.lies.ui.MainFrame;
@@ -31,12 +30,12 @@ public class Main {
    */
   public static void main(String[] args) throws InterruptedException {
   
-    Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-      @Override public void run() {
-        System.out.println("Shutdown detected - exiting.");
-        System.exit(0);
-      }
-    }));
+//    Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+//      @Override public void run() {
+//        System.out.println("Shutdown detected - exiting.");
+//        System.exit(0);
+//      }
+//    }));
 
     SwingUtilities.invokeLater(new Runnable() {
       public void run() {

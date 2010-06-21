@@ -7,12 +7,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 import org.javabuilders.BuildResult;
 import org.javabuilders.annotations.DoInBackground;
@@ -38,6 +39,7 @@ public class MainFrame extends JFrame {
   private File              currentFolder = null;
   private File              input = null;
   private File              output = null;
+  private String            timestamp = "N/A";
 
   public MainFrame() {
     result = SwingJavaBuilder.build(this);
@@ -54,6 +56,10 @@ public class MainFrame extends JFrame {
 
   public void setPolyModel(PolyGraphModel model) {
     this.polyModel = model;
+  }
+  
+  public String getTimestamp() {
+    return this.timestamp;
   }
 
   private void onFileMenuSimulate() {
@@ -111,6 +117,7 @@ public class MainFrame extends JFrame {
           logger.info("Processing PolyData node: " + pd);
           return pd;
         } catch (InterruptedException e) {
+          logger.log(Level.WARNING, "Process interrupted.", e);
           return null;
         }
       }
@@ -200,6 +207,14 @@ public class MainFrame extends JFrame {
 
   private void populateData() {
     PolyData pd = source.next();
+    try {
+      JTextField timelabel = (JTextField)result.get("time");
+      this.timestamp = ""+pd.getTimestamp();
+      //timelabel.setText(""+pd.getTimestamp());
+      //timelabel.setd
+    } catch (Throwable t) {
+      logger.log(Level.WARNING, "Error setting timestamp.", t);
+    }
     polyModel.offer(pd);
   }
 

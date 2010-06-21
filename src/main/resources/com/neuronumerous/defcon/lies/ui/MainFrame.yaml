@@ -9,12 +9,20 @@ JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultClose
             - JMenuItem(action=simulate)
     - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
         - PolyGraph(name=polygraph, size=820x400)
+    - JCheckBox(name=gsrcheck, text="GSR")
+    - JCheckBox(name=plethcheck, text="pleth")
+    - JCheckBox(name=breathcheck, text="breath")
+    - JCheckBox(name=blushcheck, text="blush")
+    - JPanel(name=timestampgroup):
+        - JLabel(text="Timestamp:")
+        - JTextField(name=time, columns=4)
     - JButton(name=start, text=button.start, onAction=[start])
     - JButton(name=stop, text=button.stop, onAction=[stop])
     - MigLayout: | 
         [grow]
         panel       [grow]
-        >start+*=1,stop=1
+        >gsrcheck,plethcheck,breathcheck,blushcheck,timestampgroup,start+*=1,stop=1
 bind: 
     - this.model: polygraph.model
     - this.startEnabled: stop.enabled
+    - this.timestamp: time.text
