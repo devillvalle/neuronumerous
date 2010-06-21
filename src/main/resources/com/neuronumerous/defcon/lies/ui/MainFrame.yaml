@@ -1,4 +1,4 @@
-JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnClose):
+JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultCloseOperation=exitOnClose):
     - Action(name=stream, text=menu.file.stream, onAction=[stop,onFileMenuStream])
     - Action(name=replay, text=menu.file.replay, onAction=[stop,onFileMenuReplay])
     - Action(name=simulate, text=menu.file.simulate, onAction=[stop,onFileMenuSimulate])
@@ -8,7 +8,7 @@ JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnC
             - JMenuItem(action=replay)
             - JMenuItem(action=simulate)
     - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
-        - PolyGraph(name=polygraph, size=760x200)
+        - PolyGraph(name=polygraph, size=820x400)
     - JButton(name=start, text=button.start, onAction=[start])
     - JButton(name=stop, text=button.stop, onAction=[stop])
     - MigLayout: | 

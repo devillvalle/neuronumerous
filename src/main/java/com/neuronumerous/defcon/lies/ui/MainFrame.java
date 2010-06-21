@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Random;
 import java.util.logging.Logger;
 
@@ -30,21 +31,23 @@ public class MainFrame extends JFrame {
   private static final long serialVersionUID = 6493344221859264556L;
   private static final Logger logger = Logger.getLogger(MainFrame.class.getName());
 
-  private BuildResult       result;
-
-  private PolyGraphModel    polyModel;
-  
+  private BuildResult       result = null;
+  private PolyGraphModel    polyModel = null;
   private BackgroundEvent   currentStartEvent = null;
-  
-  private Source<PolyData>  source;
-  
-  private File              currentFolder;
+  private Source<PolyData>  source = null;
+  private File              currentFolder = null;
+  private File              input = null;
+  private File              output = null;
 
-  private File              input;
+  public MainFrame() {
+    result = SwingJavaBuilder.build(this);
+    try {
+      File currentFolder = new File(".").getCanonicalFile();
+    } catch (IOException e) {
+      currentFolder = null;
+    }
+  }
   
-  private File              output;
-  
-
   public PolyGraphModel getPolyModel() {
     return polyModel;
   }
@@ -53,10 +56,6 @@ public class MainFrame extends JFrame {
     this.polyModel = model;
   }
 
-  public MainFrame() {
-    result = SwingJavaBuilder.build(this);
-  }
-  
   private void onFileMenuSimulate() {
     this.source = new Source<PolyData>() {
       private final Random r = new Random();      
@@ -66,7 +65,11 @@ public class MainFrame extends JFrame {
         } catch (InterruptedException e) {
           return null;
         }
-        return new PolyDataImpl(0, 95 + r.nextInt(10), 140 + r.nextInt(20), 130 + r.nextInt(10), 120 + r.nextInt(10));
+        return new PolyDataImpl(0, 
+                95 + r.nextInt(40),
+                140 + r.nextInt(60),
+                130 + r.nextInt(20),
+                120 + r.nextInt(20));
       }
     };
   } 
@@ -90,20 +93,28 @@ public class MainFrame extends JFrame {
     }
     try {
       BufferedReader reader = new BufferedReader(new FileReader(input));
-      this.source = new PolyDataSource(reader, Logger.getLogger(PolyDataSource.class.getName())){
-        @Override public PolyData next() {
-          PolyData pd = super.next();
-          logger.info("Processing PolyData node: " + pd);
-          return pd;
-        }
-      };
+      this.source = createLoggingDataSource(reader);
     } catch (FileNotFoundException e) {
       logger.severe("File not found: " + input);
       this.source = null;
       this.input = null;
       this.output = null;
     }
-     
+  }
+
+  private PolyDataSource createLoggingDataSource(BufferedReader reader) {
+    return new PolyDataSource(reader, Logger.getLogger(PolyDataSource.class.getName())){
+      @Override public PolyData next() {
+        try {
+          Thread.sleep(10);
+          PolyData pd = super.next();
+          logger.info("Processing PolyData node: " + pd);
+          return pd;
+        } catch (InterruptedException e) {
+          return null;
+        }
+      }
+    };
   } 
 
   private void onFileMenuReplay(ActionEvent e) {
@@ -118,7 +129,7 @@ public class MainFrame extends JFrame {
     }
     try {
       BufferedReader reader = new BufferedReader(new FileReader(input));
-      this.source = new PolyDataSource(reader, Logger.getLogger(PolyDataSource.class.getName()));
+      this.source = createLoggingDataSource(reader);
     } catch (FileNotFoundException fnfe) {
       logger.severe("File not found: " + input);
       this.source = null;
@@ -126,6 +137,8 @@ public class MainFrame extends JFrame {
       this.output = null;
     }
   }
+  
+  
   
   private boolean isStartEnabled() {
     return source != null;
@@ -152,6 +165,7 @@ public class MainFrame extends JFrame {
       return null;
     }
   }
+  
   @DoInBackground(cancelable = true, blocking = false)
   private void start(BackgroundEvent evt) {
     logger.info("Starting visualization.");
