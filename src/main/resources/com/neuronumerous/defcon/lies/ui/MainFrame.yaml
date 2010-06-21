@@ -1,22 +1,11 @@
 JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnClose): 
-    - JLabel(name=fNameLbl, text=label.firstName) 
-    - JLabel(name=lNameLbl, text=label.lastName) 
-    - JLabel(name=emailLbl, text=label.email) 
-    - JTextField(name=fName) 
-    - JTextField(name=lName) 
-    - JTextField(name=email) 
-    - JButton(name=save, text=button.save, onAction=($validate,save,done)) 
-    - JButton(name=cancel, text=button.cancel, onAction=($confirm,cancel)) 
+    - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
+        - PolyGraph(name=polygraph, size=760x200)
+    - JButton(name=start, text=button.start, onAction=[start])
+    - JButton(name=stop, text=button.stop, onAction=[stop])
     - MigLayout: | 
-        [pref] [grow,100] [pref] [grow,100] 
-        fNameLbl fName lNameLbl lName 
-        emailLbl email+* 
-        >save+*=1,cancel=1 
+        [grow]
+        panel       [grow]
+        >start+*=1,stop=1
 bind: 
-    - fName.text: this.person.firstName 
-    - lName.text: this.person.lastName 
-    - email.text: this.person.emailAddress 
-validate: 
-    - fName.text: {mandatory: true, label: label.firstName} 
-    - lName.text: {mandatory: true, label: label.lastName} 
-    - email.text: {mandatory: true, emailAddress: true, label: label.email} 
+    - frame.model: polygraph.model

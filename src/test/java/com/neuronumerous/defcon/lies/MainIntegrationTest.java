@@ -17,7 +17,7 @@ public class MainIntegrationTest {
   @Test
   public void testParseTimestamp() throws Throwable {
     Main main = new Main(Logger.getLogger(Main.class.getName()),new PolyDataUtil());
-    File file = new File("src/test/resources/ShortDataSet.txt");
+    File file = new File("src/test/resources/FakeDataFileBadInitialState.txt");
     Assert.assertTrue(file.exists());
     BufferedReader reader = Files.newReader(file, Charsets.US_ASCII);
     main.runFromReader(reader);
