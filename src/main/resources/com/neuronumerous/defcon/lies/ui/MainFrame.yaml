@@ -1,4 +1,12 @@
-JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnClose): 
+JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnClose):
+    - Action(name=stream, text=menu.file.stream, onAction=[stop,onFileMenuStream])
+    - Action(name=replay, text=menu.file.replay, onAction=[stop,onFileMenuReplay])
+    - Action(name=simulate, text=menu.file.simulate, onAction=[stop,onFileMenuSimulate])
+    - JMenuBar:
+        - JMenu(name=fileMenu,text=menu.file):
+            - JMenuItem(action=stream) 
+            - JMenuItem(action=replay)
+            - JMenuItem(action=simulate)
     - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
         - PolyGraph(name=polygraph, size=760x200)
     - JButton(name=start, text=button.start, onAction=[start])
@@ -8,4 +16,5 @@ JFrame(name=frame, title=frame.title, size=packed, defaultCloseOperation=exitOnC
         panel       [grow]
         >start+*=1,stop=1
 bind: 
-    - frame.model: polygraph.model
+    - this.model: polygraph.model
+    - this.startEnabled: stop.enabled
