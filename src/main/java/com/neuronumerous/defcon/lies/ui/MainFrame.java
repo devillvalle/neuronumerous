@@ -26,7 +26,6 @@ import com.neuronumerous.defcon.lies.data.PolyDataImpl;
 import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.data.PolyGraphModel;
 import com.neuronumerous.defcon.lies.util.Source;
-import com.sun.xml.internal.txw2.Document;
 
 @SuppressWarnings("unused")
 public class MainFrame extends JFrame {
