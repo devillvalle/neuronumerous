@@ -65,14 +65,16 @@ public class MainFrame extends JFrame {
 
   private void onFileMenuSimulate() {
     this.source = new Source<PolyData>() {
-      private final Random r = new Random();      
+      private final Random r = new Random(); 
+      private final long startTime = System.currentTimeMillis();
       public PolyData next() {
         try{ 
           Thread.sleep(100); 
         } catch (InterruptedException e) {
           return null;
         }
-        return new PolyDataImpl(0, 
+        long elapsed = System.currentTimeMillis() - startTime;
+        return new PolyDataImpl((int)(elapsed / 1000), 
                 95 + r.nextInt(40),
                 140 + r.nextInt(60),
                 130 + r.nextInt(20),
@@ -206,12 +208,38 @@ public class MainFrame extends JFrame {
     }
   }
 
+  private void toggleGSR() {
+    logger.info("Toggled GSR.");
+    PolyGraph pg = (PolyGraph)result.get("polygraph");
+    pg.display.setGsr(!pg.display.isGsr());
+  }
+  
+  private void togglePleth() {
+    logger.info("Toggled Pleth.");
+    PolyGraph pg = (PolyGraph)result.get("polygraph");
+    pg.display.setPleth(!pg.display.isPleth());
+    
+  }
+  private void toggleBreath() {
+    logger.info("Toggled Breath.");
+    PolyGraph pg = (PolyGraph)result.get("polygraph");
+    pg.display.setBreath(!pg.display.isBreath());
+    
+  }
+  private void toggleBlush() {
+    logger.info("Toggled Blush.");
+    PolyGraph pg = (PolyGraph)result.get("polygraph");
+    pg.display.setBlush(!pg.display.isBlush());
+  }
+  
   private void populateData() {
     PolyData pd = source.next();
     try {
       JTextField timelabel = (JTextField)result.get("time");
       this.timestamp = ""+pd.getTimestamp();
-      timelabel.setText(""+pd.getTimestamp());
+      String oldText = timelabel.getText();
+      String newText = ""+pd.getTimestamp();
+      timelabel.setText(newText);
     } catch (Throwable t) {
       logger.log(Level.WARNING, "Error setting timestamp.", t);
     }
