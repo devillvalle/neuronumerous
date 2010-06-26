@@ -1,0 +1,3 @@
+Packages installed over stock ubuntu 8.10 thus far:
+streamer
+imagemagick

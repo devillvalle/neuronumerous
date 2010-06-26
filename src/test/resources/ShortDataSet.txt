@@ -1,0 +1,2681 @@
+[1mFollow the white rabbit.
+
+[0mTimestamp:	0:0:9
+
+GSR:		247
+
+pleth:		0
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		242
+
+pleth:		0
+
+breath:		224
+
+blush:		250
+
+Timestamp:	0:0:9
+
+GSR:		218
+
+pleth:		0
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		201
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		188
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		179
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		172
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		168
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:9
+
+GSR:		167
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		167
+
+pleth:		251
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		164
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		162
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		163
+
+pleth:		251
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		250
+
+breath:		223
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		162
+
+pleth:		250
+
+breath:		224
+
+blush:		250
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		159
+
+pleth:		249
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		161
+
+pleth:		250
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		156
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		162
+
+pleth:		251
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		161
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:9
+
+GSR:		161
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		159
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:9
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:9
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:9
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:9
+
+GSR:		161
+
+pleth:		250
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:9
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:9
+
+GSR:		159
+
+pleth:		249
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		222
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		162
+
+pleth:		251
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		250
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		249
+
+breath:		223
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		162
+
+pleth:		251
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		162
+
+pleth:		249
+
+breath:		223
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		249
+
+breath:		224
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		250
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		247
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		162
+
+pleth:		251
+
+breath:		224
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		162
+
+pleth:		251
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		250
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:10
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:10
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:10
+
+GSR:		161
+
+pleth:		250
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:10
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		248
+
+Timestamp:	0:0:10
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:11
+
+GSR:		161
+
+pleth:		250
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:11
+
+GSR:		161
+
+pleth:		250
+
+breath:		223
+
+blush:		249
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		248
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		162
+
+pleth:		250
+
+breath:		224
+
+blush:		249
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		249
+
+breath:		223
+
+blush:		247
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		155
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		155
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:11
+
+GSR:		161
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		155
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		247
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		155
+
+pleth:		243
+
+breath:		218
+
+blush:		241
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		244
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		161
+
+pleth:		248
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		155
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		247
+
+breath:		222
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		159
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		156
+
+pleth:		244
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:11
+
+GSR:		155
+
+pleth:		243
+
+breath:		218
+
+blush:		241
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:11
+
+GSR:		158
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:11
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		155
+
+pleth:		243
+
+breath:		218
+
+blush:		241
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		245
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		161
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		246
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		155
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		155
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		161
+
+pleth:		247
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		157
+
+pleth:		245
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:12
+
+GSR:		161
+
+pleth:		249
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:12
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:12
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:12
+
+GSR:		156
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		155
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		244
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		161
+
+pleth:		249
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		245
+
+breath:		221
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		155
+
+pleth:		243
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		248
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		246
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		245
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		160
+
+pleth:		248
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		245
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		244
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		243
+
+breath:		219
+
+blush:		241
+
+Timestamp:	0:0:13
+
+GSR:		160
+
+pleth:		248
+
+breath:		220
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		247
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		0
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		0
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		155
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		155
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		0
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		161
+
+pleth:		0
+
+breath:		222
+
+blush:		247
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		0
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		0
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		0
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		0
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		155
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		0
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		161
+
+pleth:		0
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		160
+
+pleth:		0
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		0
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		0
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		0
+
+breath:		220
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		156
+
+pleth:		0
+
+breath:		219
+
+blush:		243
+
+Timestamp:	0:0:13
+
+GSR:		155
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		157
+
+pleth:		0
+
+breath:		219
+
+blush:		242
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		0
+
+breath:		222
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		0
+
+breath:		221
+
+blush:		246
+
+Timestamp:	0:0:13
+
+GSR:		159
+
+pleth:		0
+
+breath:		221
+
+blush:		245
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		0
+
+breath:		220
+
+blush:		244
+
+Timestamp:	0:0:13
+
+GSR:		158
+
+pleth:		0
+
+breath:		220
+
+blush:		244

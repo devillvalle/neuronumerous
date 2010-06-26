@@ -1,0 +1,33 @@
+JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultCloseOperation=exitOnClose):
+    - Action(name=stream, text=menu.file.stream, onAction=[stop,onFileMenuStream])
+    - Action(name=replay, text=menu.file.replay, onAction=[stop,onFileMenuReplay])
+    - Action(name=simulate, text=menu.file.simulate, onAction=[stop,onFileMenuSimulate])
+    - JMenuBar:
+        - JMenu(name=fileMenu,text=menu.file):
+            - JMenuItem(action=stream) 
+            - JMenuItem(action=replay)
+            - JMenuItem(action=simulate)
+    - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
+        - PolyGraph(name=polygraph, size=820x400)
+    - JCheckBox(name=gsrcheck, selected=true, text="GSR", onAction=[toggleGSR])
+    - JCheckBox(name=plethcheck, selected=true, text="pleth", onAction=[togglePleth])
+    - JCheckBox(name=breathcheck, selected=true, text="breath", onAction=[toggleBreath])
+    - JCheckBox(name=blushcheck, selected=true, text="blush", onAction=[toggleBlush])
+    - JPanel(name=timestampcomponent):
+        - JLabel(name=labelForTime, text="Timestamp:")
+        - JTextField(name=time, columns=4)
+    - JButton(name=start, text=button.start, onAction=[start])
+    - JButton(name=stop, text=button.stop, onAction=[stop])
+    - MigLayout: | 
+        [grow]
+        panel       [grow]
+        >gsrcheck,plethcheck,breathcheck,blushcheck,timestampcomponent,start+*=1,stop=1
+#bind: 
+#    - this.model: polygraph.model
+#    - this.startEnabled: stop.enabled
+#    - this.timestamp: time.text
+#    - polygraph.display.gsr: gsrcheck.selected
+#    - polygraph.display.pleth: plethcheck.selected
+#    - polygraph.display.breath: breathcheck.selected
+#    - polygraph.display.blush: blushcheck.selected
+    
