@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 lies_dir="$(dirname $0)"
 version="0.0.1-SNAPSHOT"
 lies_jar="lies-${version}-bin.jar"
