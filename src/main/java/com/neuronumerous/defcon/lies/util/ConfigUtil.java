@@ -43,7 +43,7 @@ public class ConfigUtil {
     //properties.setProperty("plot/coordinateSystem/yAxis/axisLength", "1.0");
     properties.setProperty("plot/coordinateSystem/yAxis/ticLabelAttributes/", "defaultTicLabelAttributes/");
     properties.setProperty("plot/coordinateSystem/yAxis/maximum", "210");
-    properties.setProperty("plot/coordinateSystem/yAxis/minimum", "130");
+    properties.setProperty("plot/coordinateSystem/yAxis/minimum", "70");
     properties.setProperty("plot/coordinateSystem/yAxis/axisLabelPosition", "-0.15 0");
     properties.setProperty("plot/curveFactory/definitions", "def null");
     properties.setProperty("plot/curveFactory/def/symbolFactory/className", "jcckit.plot.SquareSymbolFactory");
