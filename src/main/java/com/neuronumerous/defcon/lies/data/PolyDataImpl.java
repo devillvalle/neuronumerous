@@ -4,8 +4,13 @@
  */
 package com.neuronumerous.defcon.lies.data;
 
-public class PolyDataImpl implements PolyData {
+import java.util.logging.Logger;
 
+
+public class PolyDataImpl implements PolyData {
+	
+  private final static Logger LOG = Logger.getLogger(PolyDataImpl.class.getName());
+	
   private Integer blush;
   private Integer breath;
   private Integer gsr;
@@ -64,9 +69,14 @@ public class PolyDataImpl implements PolyData {
       }
     }
     int timestamp = 0;
-    timestamp += Integer.valueOf(parts[0]) * 60 * 60;
-    timestamp += Integer.valueOf(parts[1]) * 60;
-    timestamp += Integer.valueOf(parts[2]);
+    try {
+	    timestamp += Integer.valueOf(parts[0]) * 60 * 60;
+	    timestamp += Integer.valueOf(parts[1]) * 60;
+	    timestamp += Integer.valueOf(parts[2]);
+    } catch (Exception e) {
+      LOG.info("Error parsing timestamp: " + parts);
+      return 0;
+    }
     return timestamp;
   }
   

@@ -4,3 +4,4 @@ target
 \.settings
 .*[.]bak
 .DS_Store
+bin
