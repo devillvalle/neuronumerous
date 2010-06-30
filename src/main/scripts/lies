@@ -1,0 +1,12 @@
+#!/bin/bash
+set -x
+lies_dir="$(dirname $0)"
+version="0.0.1-SNAPSHOT"
+lies_jar="lies-${version}-bin.jar"
+main_class="com.neuronumerous.defcon.lies.Main"
+if [ -f ${lies_dir}/${lies_jar} ]; then
+  java -cp ${lies_dir}/${lies_jar} ${main_class}   
+else 
+  java -cp /opt/${lies_jar} ${main_class}   
+fi
+
