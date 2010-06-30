@@ -3,8 +3,10 @@ package com.neuronumerous.defcon.lies.ui;
 import java.awt.event.ActionEvent;
 import java.io.BufferedReader;
 import java.io.File;
+import javax.swing.filechooser.FileFilter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 import java.util.logging.Level;
@@ -84,32 +86,99 @@ public class MainFrame extends JFrame {
   
   private void onFileMenuStream() {
     logger.info("onFileMenuStream was invoked!"); 
-    File input = selectFile("Open input device or file to be streamed...");
+    File input = selectFile("Open input device to be streamed...", "/dev", "ttyS?");
     if (input != null && input.exists()) {
       this.input = input;
     } else {
       this.input = null;
       this.output = null;
+      JOptionPane.showMessageDialog(this, 
+              "You must select a serial device.", 
+              "No output device selected...", 
+              JOptionPane.ERROR_MESSAGE);
       return;
     }
     File output = selectFile("Open file to save the streamed data...");
-    if (output != null && output.exists()) {
+    if (output != null) {
       this.output = output;
     } else {
       this.output = null;
+      JOptionPane.showMessageDialog(this, 
+              "You must select a file to save the captured data.", 
+              "No output file selected...", 
+              JOptionPane.ERROR_MESSAGE);
       return;
     }
     try {
       BufferedReader reader = new BufferedReader(new FileReader(input));
-      this.source = createLoggingDataSource(reader);
+      this.source = createTeeDataSource(createLoggingDataSource(reader), new FileWriter(output));
     } catch (FileNotFoundException e) {
       logger.severe("File not found: " + input);
+      JOptionPane.showMessageDialog(this, 
+              "Could not create a file writer for file " + output.getPath(), 
+              "...", 
+              JOptionPane.ERROR_MESSAGE);
       this.source = null;
       this.input = null;
       this.output = null;
-    }
+    } catch (IOException e) {
+        logger.severe("File not found: " + input);
+        JOptionPane.showMessageDialog(this, 
+                "Could not create a file writer for file " + output.getPath(), 
+                "...", 
+                JOptionPane.ERROR_MESSAGE);
+        this.source = null;
+        this.input = null;
+        this.output = null;
+      }
   }
 
+  private Source<PolyData> createTeeDataSource(Source<PolyData> ds, FileWriter fileWriter) {
+	return new TeeDataSource<PolyData>(ds, fileWriter, new Formatter<PolyData, String>(){
+		@Override public String format(PolyData t) {
+		  StringBuilder sb = new StringBuilder();
+		  sb.append("Timestamp: \t").append(convert(t.getTimestamp())).append("\n");
+		  sb.append("GSR: \t").append(t.getGsr()).append("\n");
+          sb.append("pleth:	\t").append(t.getPleth()).append("\n");
+          sb.append("breath: \t").append(t.getBreath()).append("\n");
+          sb.append("blush:	\t").append(t.getBlush()).append("\n");
+          return sb.toString();
+		}
+		public String convert(Integer i) {
+		  return "::"+i;
+		}
+	});
+  }
+
+  private static class TeeDataSource<T> implements Source<T> {
+
+	private Source<T> source;
+	
+	private FileWriter writer;
+
+	private Formatter<T, String> formatter;
+	
+	public TeeDataSource(Source<T> source, FileWriter writer, Formatter<T, String> formatter) {
+      this.source = source;
+      this.writer = writer;
+      this.formatter = formatter; 
+	}
+	@Override public T next() {
+      T t = source.next();
+      try {
+  	    writer.append(formatter.format(t));
+        writer.flush();
+      } catch (Exception e) {
+    	logger.log(Level.SEVERE, "Failed to write to writer.", e);
+      }
+      return t;
+	}
+  }
+  
+  private static interface Formatter<T, V> {
+	public V format (T t);
+  }
+  
   private PolyDataSource createLoggingDataSource(BufferedReader reader) {
     return new PolyDataSource(reader, Logger.getLogger(PolyDataSource.class.getName())){
       @Override public PolyData next() {
@@ -147,17 +216,31 @@ public class MainFrame extends JFrame {
     }
   }
   
-  
-  
   private boolean isStartEnabled() {
     return source != null;
   }
 
   private File selectFile(String dialogTitle) {
-    
-    JFileChooser jfc = new JFileChooser(currentFolder);
+	return selectFile(dialogTitle, null, null);
+  }
+  
+  private File selectFile(String dialogTitle, String startingPath, final String filter) {
+    JFileChooser jfc = null;
+    if (startingPath == null) {
+      jfc = new JFileChooser(currentFolder);
+    } else {
+      jfc = new JFileChooser(new File(startingPath));
+    }
     jfc.setFileHidingEnabled(false);
     jfc.setDialogTitle(dialogTitle);
+    if (filter != null) {
+      jfc.setFileFilter(new FileFilter() {
+		@Override public boolean accept(File pathname) {
+			return pathname.getName().matches(filter);
+		} 
+		@Override public String getDescription() { return filter; }
+	});
+    }
 
     int returnVal = jfc.showOpenDialog(this);
 
@@ -165,7 +248,7 @@ public class MainFrame extends JFrame {
       File file = jfc.getSelectedFile();
       //This is where a real application would open the file.
       logger.info("Opening: " + file.getName() + ".");
-      if (file != null) {
+      if (file != null && startingPath == null) {
         currentFolder = file.getParentFile();
       }
       return file;

@@ -10,9 +10,9 @@ JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultClose
     - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
         - PolyGraph(name=polygraph, size=820x400)
     - JCheckBox(name=gsrcheck, selected=true, text="GSR", onAction=[toggleGSR])
-    - JCheckBox(name=plethcheck, selected=true, text="pleth", onAction=[togglePleth])
+    - JCheckBox(name=plethcheck, selected=true, text="pulse", onAction=[togglePleth])
     - JCheckBox(name=breathcheck, selected=true, text="breath", onAction=[toggleBreath])
-    - JCheckBox(name=blushcheck, selected=true, text="blush", onAction=[toggleBlush])
+    - JCheckBox(name=blushcheck, selected=false, text="blush", onAction=[toggleBlush])
     - JPanel(name=timestampcomponent):
         - JLabel(name=labelForTime, text="Timestamp:")
         - JTextField(name=time, columns=4)
