@@ -7,8 +7,6 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.neuronumerous.defcon.lies.data.PolyData;
-import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.util.Source;
 
 public class PolygraphDataSourceTest {
@@ -25,20 +23,6 @@ public class PolygraphDataSourceTest {
                                   + "breath:     9\n\n" 
                                   + "blush:      4\n\n";
 
-  @Test
-  public void testGetDataFieldFromLine() {
-    String fieldData = "Timestamp:     0:5:4";
-    DataField result = PolyDataSource.getDataFieldFromLine(fieldData);
-    Assert.assertEquals("Timestamp", result.name);
-    Assert.assertEquals("0:5:4", result.data);
-  }
-
-  @Test
-  public void testGetNextNonEmptyLine() {
-    BufferedReader reader = new BufferedReader(new StringReader("\n\n\nblah\n\n"));
-    Assert.assertEquals("blah", PolyDataSource.nextNonEmptyLine(reader));
-    Assert.assertEquals(null, PolyDataSource.nextNonEmptyLine(reader));
-  }
 
   @Test
   public void testNextWithCleanData() {
