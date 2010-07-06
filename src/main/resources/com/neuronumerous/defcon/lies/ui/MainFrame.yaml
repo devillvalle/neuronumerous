@@ -1,14 +1,15 @@
 JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultCloseOperation=exitOnClose):
     - Action(name=quit, text=menu.file.quit, onAction=[stop,onQuit])
-    - Action(name=stream, text=menu.file.stream, onAction=[stop,onFileMenuStream])
-    - Action(name=replay, text=menu.file.replay, onAction=[stop,onFileMenuReplay])
-    - Action(name=simulate, text=menu.file.simulate, onAction=[stop,onFileMenuSimulate])
+    - Action(name=stream, text=menu.lie.stream, onAction=[stop,onFileMenuStream])
+    - Action(name=replay, text=menu.lie.replay, onAction=[stop,onFileMenuReplay])
+    - Action(name=simulate, text=menu.lie.simulate, onAction=[stop,onFileMenuSimulate])
     - JMenuBar:
         - JMenu(name=fileMenu,text=menu.file):
+            - JMenuItem(action=quit)
+        - JMenu(name=lieMenu,text=menu.lie):
             - JMenuItem(action=stream) 
             - JMenuItem(action=replay)
             - JMenuItem(action=simulate)
-            - JMenuItem(action=quit)
     - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
         - PolyGraph(name=polygraph, size=820x400)
     - JCheckBox(name=gsrcheck, selected=true, text=check.gsr.text, onAction=[toggleGSR])
