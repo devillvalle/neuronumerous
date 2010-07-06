@@ -3,7 +3,6 @@ package com.neuronumerous.defcon.lies.ui;
 import java.awt.event.ActionEvent;
 import java.io.BufferedReader;
 import java.io.File;
-import javax.swing.filechooser.FileFilter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -16,6 +15,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.filechooser.FileFilter;
 
 import org.javabuilders.BuildResult;
 import org.javabuilders.annotations.DoInBackground;
@@ -25,8 +25,11 @@ import org.javabuilders.swing.SwingJavaBuilder;
 
 import com.neuronumerous.defcon.lies.data.PolyData;
 import com.neuronumerous.defcon.lies.data.PolyDataImpl;
+import com.neuronumerous.defcon.lies.data.PolyDataParser;
 import com.neuronumerous.defcon.lies.data.PolyDataSource;
 import com.neuronumerous.defcon.lies.data.PolyGraphModel;
+import com.neuronumerous.defcon.lies.data.TeeDataSource;
+import com.neuronumerous.defcon.lies.util.Formatter;
 import com.neuronumerous.defcon.lies.util.Source;
 
 @SuppressWarnings("unused")
@@ -111,7 +114,8 @@ public class MainFrame extends JFrame {
     }
     try {
       BufferedReader reader = new BufferedReader(new FileReader(input));
-      this.source = createTeeDataSource(createLoggingDataSource(reader), new FileWriter(output));
+      this.source = new TeeDataSource<PolyData>(createLoggingDataSource(reader), 
+              new FileWriter(output), PolyDataParser.FORMATTER);
     } catch (FileNotFoundException e) {
       logger.severe("File not found: " + input);
       JOptionPane.showMessageDialog(this, 
@@ -137,54 +141,8 @@ public class MainFrame extends JFrame {
     System.exit(0);
   }
   
-  private Source<PolyData> createTeeDataSource(Source<PolyData> ds, FileWriter fileWriter) {
-	return new TeeDataSource<PolyData>(ds, fileWriter, new Formatter<PolyData, String>(){
-		@Override public String format(PolyData t) {
-		  StringBuilder sb = new StringBuilder();
-		  sb.append("Timestamp: \t").append(convert(t.getTimestamp())).append("\n");
-		  sb.append("GSR: \t").append(t.getGsr()).append("\n");
-          sb.append("pleth:	\t").append(t.getPleth()).append("\n");
-          sb.append("breath: \t").append(t.getBreath()).append("\n");
-          sb.append("blush:	\t").append(t.getBlush()).append("\n");
-          return sb.toString();
-		}
-		public String convert(Integer i) {
-		  return "::"+i;
-		}
-	});
-  }
-
-  private static class TeeDataSource<T> implements Source<T> {
-
-	private Source<T> source;
-	
-	private FileWriter writer;
-
-	private Formatter<T, String> formatter;
-	
-	public TeeDataSource(Source<T> source, FileWriter writer, Formatter<T, String> formatter) {
-      this.source = source;
-      this.writer = writer;
-      this.formatter = formatter; 
-	}
-	@Override public T next() {
-      T t = source.next();
-      try {
-  	    writer.append(formatter.format(t));
-        writer.flush();
-      } catch (Exception e) {
-    	logger.log(Level.SEVERE, "Failed to write to writer.", e);
-      }
-      return t;
-	}
-  }
-  
-  private static interface Formatter<T, V> {
-	public V format (T t);
-  }
-  
   private PolyDataSource createLoggingDataSource(BufferedReader reader) {
-    return new PolyDataSource(reader, Logger.getLogger(PolyDataSource.class.getName())){
+    return new PolyDataSource(reader){
       @Override public PolyData next() {
         try {
           Thread.sleep(10);
