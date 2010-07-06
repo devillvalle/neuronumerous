@@ -1,5 +1,10 @@
 package com.neuronumerous.defcon.lies;
 
+import gnu.io.CommPortIdentifier;
+
+import java.util.Enumeration;
+
+import org.junit.Test;
 
 public class MainIntegrationTest {
 
