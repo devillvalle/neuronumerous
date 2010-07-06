@@ -1,4 +1,5 @@
 JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultCloseOperation=exitOnClose):
+    - Action(name=quit, text=menu.file.quit, onAction=[stop,onQuit])
     - Action(name=stream, text=menu.file.stream, onAction=[stop,onFileMenuStream])
     - Action(name=replay, text=menu.file.replay, onAction=[stop,onFileMenuReplay])
     - Action(name=simulate, text=menu.file.simulate, onAction=[stop,onFileMenuSimulate])
@@ -7,12 +8,13 @@ JFrame(name=frame, title=frame.title, size=packed, resizable=false, defaultClose
             - JMenuItem(action=stream) 
             - JMenuItem(action=replay)
             - JMenuItem(action=simulate)
+            - JMenuItem(action=quit)
     - JPanel(name=panel, border=loweredBevel, groupTitle="Polygraph"):
         - PolyGraph(name=polygraph, size=820x400)
-    - JCheckBox(name=gsrcheck, selected=true, text="GSR", onAction=[toggleGSR])
-    - JCheckBox(name=plethcheck, selected=true, text="pulse", onAction=[togglePleth])
-    - JCheckBox(name=breathcheck, selected=true, text="breath", onAction=[toggleBreath])
-    - JCheckBox(name=blushcheck, selected=true, text="blush", onAction=[toggleBlush])
+    - JCheckBox(name=gsrcheck, selected=true, text=check.gsr.text, onAction=[toggleGSR])
+    - JCheckBox(name=plethcheck, selected=true, text=check.pleth.text, onAction=[togglePleth])
+    - JCheckBox(name=breathcheck, selected=true, text=check.breath.text, onAction=[toggleBreath])
+    - JCheckBox(name=blushcheck, selected=true, text=check.blush.text, onAction=[toggleBlush])
     - JPanel(name=timestampcomponent):
         - JLabel(name=labelForTime, text="Timestamp:")
         - JTextField(name=time, columns=4)

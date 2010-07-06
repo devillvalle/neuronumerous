@@ -133,6 +133,10 @@ public class MainFrame extends JFrame {
       }
   }
 
+  private void onQuit() {
+    System.exit(0);
+  }
+  
   private Source<PolyData> createTeeDataSource(Source<PolyData> ds, FileWriter fileWriter) {
 	return new TeeDataSource<PolyData>(ds, fileWriter, new Formatter<PolyData, String>(){
 		@Override public String format(PolyData t) {
