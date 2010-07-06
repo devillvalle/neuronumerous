@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.neuronumerous.defcon</groupId>
   <artifactId>lies</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   <name>Open Source Lie Detector Feedback Software</name>
   <build>
     <plugins>
@@ -29,6 +29,12 @@
 				<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.neuronumerous.defcon.lies.Main</mainClass>
+            </manifest>
+          </archive>
 				  <descriptorRefs>
 				        <descriptorRef>jar-with-dependencies</descriptorRef>
 				  </descriptorRefs>
