@@ -225,7 +225,7 @@ public class MainFrame extends JFrame {
   }
 
   private File selectFile(String dialogTitle) {
-	return selectFile(dialogTitle, null, null);
+	  return selectFile(dialogTitle, null, null);
   }
   
   private File selectFile(String dialogTitle, String startingPath, final String filter) {
@@ -239,11 +239,11 @@ public class MainFrame extends JFrame {
     jfc.setDialogTitle(dialogTitle);
     if (filter != null) {
       jfc.setFileFilter(new FileFilter() {
-		@Override public boolean accept(File pathname) {
-			return pathname.getName().matches(filter);
-		} 
-		@Override public String getDescription() { return filter; }
-	});
+    		@Override public boolean accept(File pathname) {
+    			return pathname.getName().matches(filter);
+    		} 
+    		@Override public String getDescription() { return filter; }
+    	});
     }
 
     int returnVal = jfc.showOpenDialog(this);
