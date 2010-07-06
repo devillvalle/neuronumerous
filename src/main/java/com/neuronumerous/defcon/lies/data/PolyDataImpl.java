@@ -55,30 +55,6 @@ public class PolyDataImpl implements PolyData {
   public Integer getTimestamp() {
     return timestamp;
   }
-
-  /**
-   * Parses the HH:MM:SS timestamp into raw seconds.
-   * 
-   * @return timestamp in seconds
-   */
-  public static Integer parseTimestamp(String timestampString) {
-    String[] parts = timestampString.split("[:]");
-    for (int i = 0; i < parts.length; i++) {
-      if (parts[i] == null || parts[i].isEmpty()) {
-        parts[i] = "0";
-      }
-    }
-    int timestamp = 0;
-    try {
-	    timestamp += Integer.valueOf(parts[0]) * 60 * 60;
-	    timestamp += Integer.valueOf(parts[1]) * 60;
-	    timestamp += Integer.valueOf(parts[2]);
-    } catch (Exception e) {
-      LOG.info("Error parsing timestamp: " + parts);
-      return 0;
-    }
-    return timestamp;
-  }
   
   @Override
   public String toString() {
