@@ -2,6 +2,7 @@ package com.neuronumerous.defcon.lies.data;
 
 import java.io.BufferedReader;
 import java.io.StringReader;
+import java.util.Date;
 
 import junit.framework.Assert;
 
@@ -33,5 +34,13 @@ public class PolyDataParserTest {
     Assert.assertEquals((Integer)124, parser.parseTimestamp(":2:4"));
     Assert.assertEquals((Integer)4, parser.parseTimestamp("0::4"));
     Assert.assertEquals((Integer)(65*60+4), parser.parseTimestamp("0:65:4"));
+  }
+  
+  @Test
+  public void testParseTimestampWithDate() {
+    Date date = new Date(2134,07,05,0,5,4);
+    long expected = date.getTime() / 1000;
+    int timestamp = parser.parseTimestamp("2134-07-05 0:5:4");
+    Assert.assertEquals(expected, timestamp);
   }
 }
