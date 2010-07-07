@@ -2,6 +2,7 @@ package com.neuronumerous.defcon.lies.data;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -85,7 +86,23 @@ public class PolyDataParser {
    * @return timestamp in seconds
    */
   public Integer parseTimestamp(String timestampString) {
-    String[] parts = timestampString.split("[:]");
+    String[] parts = timestampString.trim().split("[ ]+");
+    switch (parts.length) {
+      case 1: return parseRelativeTimestamp(parts[0]);
+      case 2: return parseAbsoluteTimestamp(parts[0], parts[1]);
+      default:
+        logger.info("Too many pieces parsing timestamp: " + Arrays.asList(parts));
+        return -1;
+    } 
+  }
+
+  private Integer parseAbsoluteTimestamp(String date, String time) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  private Integer parseRelativeTimestamp(String time) {
+    String[] parts = time.trim().split("[:]");
     for (int i = 0; i < parts.length; i++) {
       if (parts[i] == null || parts[i].isEmpty()) {
         parts[i] = "0";
@@ -97,8 +114,8 @@ public class PolyDataParser {
       timestamp += Integer.valueOf(parts[1]) * 60;
       timestamp += Integer.valueOf(parts[2]);
     } catch (Exception e) {
-      logger.info("Error parsing timestamp: " + parts);
-      return 0;
+      logger.info("Error parsing timestamp: " + Arrays.asList(parts));
+      return -1;
     }
     return timestamp;
   }
